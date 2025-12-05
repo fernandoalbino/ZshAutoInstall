@@ -1,0 +1,95 @@
+# ============================================================
+# Starship Prompt - DarkPro Edition
+# Tailored for clean, professional, and distraction-free use.
+# ============================================================
+
+# Use a compact two-line layout
+format = """
+[┌](bold bright-black) $directory$git_branch$git_status$python$nodejs
+[└](bold bright-black) $character
+"""
+
+# Disable extra blank lines between prompts
+add_newline = false
+
+# ------------------------------------------------------------
+# Directory Module
+# ------------------------------------------------------------
+[directory]
+style = "bold cyan"
+read_only = " "
+truncation_length = 3
+truncate_to_repo = false
+
+# ------------------------------------------------------------
+# Character Module (Prompt symbol)
+# ------------------------------------------------------------
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vicmd_symbol = "[❮](bold yellow)"
+
+# ------------------------------------------------------------
+# Git Branch
+# ------------------------------------------------------------
+[git_branch]
+symbol = " "
+style = "bold purple"
+
+# ------------------------------------------------------------
+# Git Status
+# ------------------------------------------------------------
+[git_status]
+style = "bold bright-black"
+conflicted = "⚠ "
+ahead = "⇡${count}"
+behind = "⇣${count}"
+modified = "● "
+staged = "✚ "
+deleted = "✖ "
+untracked = "… "
+
+# ------------------------------------------------------------
+# Python (virtualenv)
+# ------------------------------------------------------------
+[python]
+symbol = " "
+style = "bold yellow"
+pyenv_version_name = true
+format = "[$symbol$virtualenv]($style) "
+
+# ------------------------------------------------------------
+# NodeJS (nvm / node)
+# ------------------------------------------------------------
+[nodejs]
+symbol = " "
+style = "bold green"
+format = "[$symbol($version)]($style) "
+
+# ------------------------------------------------------------
+# Command Duration
+# ------------------------------------------------------------
+[cmd_duration]
+min_time = 300
+format = "⏱ [$duration](bold yellow) "
+
+# ------------------------------------------------------------
+# Time module (optional)
+# ------------------------------------------------------------
+[time]
+disabled = true
+format = "🕒 [$time]($style)"
+time_format = "%H:%M"
+
+# ------------------------------------------------------------
+# Disable modules you don't want to show
+# ------------------------------------------------------------
+[package]
+disabled = true
+[ruby]
+disabled = true
+[conda]
+disabled = true
+[docker_context]
+disabled = true
+
