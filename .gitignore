@@ -1,0 +1,20 @@
+# Ignore system artifacts
+.DS_Store
+Thumbs.db
+
+# Never include shell history
+*.history
+.history
+/local/share/zsh/
+.history-*
+*.log
+
+# Ignore OS or editor files
+.vscode/
+.idea/
+
+# Ignore backups
+*~
+*.bak
+*.tmp
+

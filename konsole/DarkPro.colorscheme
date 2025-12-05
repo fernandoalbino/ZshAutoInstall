@@ -1,0 +1,71 @@
+[Background]
+Color=10,12,14
+
+[Foreground]
+Color=230,230,230
+
+[BackgroundIntense]
+Color=20,22,25
+
+[ForegroundIntense]
+Color=255,255,255
+
+[BackgroundFaint]
+Color=5,5,5
+
+[ForegroundFaint]
+Color=160,160,160
+
+
+# Cinza escuro
+[Color0]
+Color=30,30,30
+[Color0Intense]
+Color=55,55,55
+
+# Vermelho
+[Color1]
+Color=180,60,70
+[Color1Intense]
+Color=230,80,90
+
+# Verde
+[Color2]
+Color=90,160,80
+[Color2Intense]
+Color=120,200,110
+
+# Amarelo
+[Color3]
+Color=210,180,95
+[Color3Intense]
+Color=240,210,120
+
+# Azul
+[Color4]
+Color=90,130,210
+[Color4Intense]
+Color=120,160,240
+
+# Magenta
+[Color5]
+Color=160,90,150
+[Color5Intense]
+Color=200,120,190
+
+# Ciano
+[Color6]
+Color=70,180,190
+[Color6Intense]
+Color=120,210,220
+
+# Branco / Cinza claro
+[Color7]
+Color=200,200,200
+[Color7Intense]
+Color=240,240,240
+
+[General]
+Description=DarkPro High Contrast
+Opacity=1
+Wallpaper=
